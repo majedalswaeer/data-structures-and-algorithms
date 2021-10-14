@@ -1,6 +1,11 @@
 
 def binarySearch(my_list,se_key):
 
+    """
+    this function takes in 2 parameters: a sorted array and the search key eturn the index of the array’s element that is equal to the value of the search key, or -1 if the element is not in the array.
+    
+    """
+
     start = 0
     end = len(my_list)
     mid = 0
