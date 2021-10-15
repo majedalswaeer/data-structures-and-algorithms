@@ -40,3 +40,15 @@ Arguments: none
 
 Returns: a string representing all the values in the Linked List, formatted as: "{ a } -> { b } -> { c } -> NULL"
 ```
+# Check List
+- [x] Can successfully instantiate an empty linked list
+
+- [x] Can properly insert into the linked list
+
+- [x] The head property will properly point to the first node in the linked list
+
+- [x] Can properly insert multiple nodes into the linked list
+
+- [x] Will return true when finding a value within the linked list that exists
+
+- [x] Will return false when searching for a value in the linked list that does not exist
