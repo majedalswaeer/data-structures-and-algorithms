@@ -90,7 +90,7 @@ def test_includes_return_falsee():
     # assert
     assert actual==expected
 
-def test_toString():
+def test__str__():
     # Arrange
     my_class = LinkedList()
     my_class.insert("3")
@@ -99,7 +99,7 @@ def test_toString():
     expected="{ 1 } -> { 2 } -> { 3 } -> NULL"
 
     # Act
-    actual=my_class.to_string()
+    actual=my_class.__str__()
 
     # assert
     assert actual==expected
