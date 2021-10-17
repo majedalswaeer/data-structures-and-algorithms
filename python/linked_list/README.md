@@ -40,6 +40,39 @@ Arguments: none
 
 Returns: a string representing all the values in the Linked List, formatted as: "{ a } -> { b } -> { c } -> NULL"
 ```
+
+- `insert_after`
+
+```
+Insert_after is a method adds a new node with the given new value immediately after the first node that has the value specified
+
+Arguments: value, new value
+
+Returns: a list with added node after the value specified
+```
+
+
+- `insert_before`
+```
+Insert_before is a method adds a new node with the given new value immediately before the first node that has the value specified
+
+Arguments: value, new value
+
+Returns: a list with added node before the value specified
+```
+
+- `append`
+```
+
+Append function adds a node to the end of the list
+
+Arguments: new value
+
+Returns: list with a new node in its ending
+
+```
+
+
 # Check List
 - [x] Can successfully instantiate an empty linked list
 
