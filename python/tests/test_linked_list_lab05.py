@@ -104,3 +104,102 @@ def test__str__():
     # assert
     assert actual==expected
 
+## lab06
+
+def test_insert_after():
+    #Arrange
+    my_class = LinkedList()
+    my_class.insert("3")
+    my_class.insert("2")
+    my_class.insert("1")
+    my_class.insert_after("1", "4")
+    expected = "{ 1 } -> { 4 } -> { 2 } -> { 3 } -> NULL"
+
+    #Act
+    actual = str(my_class)
+
+    #Assert
+    assert actual == expected
+
+
+def test_insert_after_two():
+    #Arrange
+    my_class = LinkedList()
+    my_class.insert("3")
+    my_class.insert("2")
+    my_class.insert("1")
+    my_class.insert_after("3", "new")
+    expected = "{ 1 } -> { 2 } -> { 3 } -> { new } -> NULL"
+
+    #Act
+    actual = actual=my_class.__str__()
+
+    #Assert
+    assert actual == expected
+
+def test_insert_after_three():
+    #Arrange
+    my_class = LinkedList()
+    my_class.insert("3")
+    my_class.insert("2")
+    my_class.insert("1")
+
+    my_class.insert_after("2", "2")
+
+    expected = "{ 1 } -> { 2 } -> { 2 } -> { 3 } -> NULL"
+
+    #Act
+    actual = actual=my_class.__str__()
+
+    #Assert
+    assert actual == expected
+
+
+def test_link_append_multiple():
+    #Arrange
+    my_class = LinkedList()
+    my_class.insert("3")
+    my_class.append("4")
+    my_class.append("5")
+    my_class.append("6")
+
+    expected = "{ 3 } -> { 4 } -> { 5 } -> { 6 } -> NULL"
+
+    #Act
+    actual = actual=my_class.__str__()
+
+    #Assert
+    assert actual == expected
+
+
+
+def test_insert_before():
+    #Arrange
+    my_class = LinkedList()
+    my_class.insert("3")
+    my_class.insert("2")
+    my_class.insert("1")
+    my_class.insert_before("1", "4")
+    expected = "{ 4 } -> { 1 } -> { 2 } -> { 3 } -> NULL"
+
+    #Act
+    actual = actual=my_class.__str__()
+
+    #Assert
+    assert actual == expected
+
+def test_insert_before_two():
+    #Arrange
+    my_class = LinkedList()
+    my_class.insert("3")
+    my_class.insert("2")
+    my_class.insert("1")
+    my_class.insert_before("3", "new")
+    expected = "{ 1 } -> { 2 } -> { new } -> { 3 } -> NULL"
+
+    #Act
+    actual=my_class.__str__()
+
+    #Assert
+    assert actual == expected
+
