@@ -70,7 +70,7 @@ class LinkedList:
             self.cur =next_node
         return False
 
-    def to_string(self):
+    def __str__(self):
         """
         Includes Indicates whether that value exists as a Node’s value somewhere within the list.
 
