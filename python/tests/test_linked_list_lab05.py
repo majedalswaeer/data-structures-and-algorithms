@@ -203,3 +203,34 @@ def test_insert_before_two():
     #Assert
     assert actual == expected
 
+def test_kthFromEnd():
+    #Arrange
+    my_class = LinkedList()
+    my_class.insert("4")
+    my_class.insert("3")
+    my_class.insert("2")
+    my_class.insert("1")
+    expected = "4"
+
+
+    #Act
+    actual=my_class.kthFromEnd(0)
+
+    #Assert
+    assert actual == expected
+
+def test_kthFromEnd_two():
+    #Arrange
+    my_class = LinkedList()
+    my_class.insert("4")
+    my_class.insert("3")
+    my_class.insert("2")
+    my_class.insert("1")
+    expected = "1"
+
+
+    #Act
+    actual=my_class.kthFromEnd(3)
+
+    #Assert
+    assert actual == expected
