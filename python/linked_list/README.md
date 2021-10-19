@@ -4,6 +4,11 @@ This challenge repreasent a singliy linked list with its basics and how to creat
 ## Challenge
 Implementing methods on data structures and creating the nodes
 
+## White board process
+- `linked-list-kth`
+
+![linked_list_kth](linked_list_kth.png)
+
 ## Approach & Efficiency
 This challenge enhanced my logic understanding of the linked list
 - `Insert` method has O(1) big O complexity for time and space
@@ -70,6 +75,16 @@ Arguments: new value
 
 Returns: list with a new node in its ending
 
+```
+
+- `kthFromEnd`
+```
+kthFromEnd is a function that return the node’s value that is k places from the tail of the linked list
+
+
+Arguments:
+Input: value
+Returns: the the node’s value that is k places from the tail
 ```
 
 
