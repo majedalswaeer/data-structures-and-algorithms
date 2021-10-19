@@ -184,6 +184,13 @@ class LinkedList:
                 return n.value
             n = n.next
 
+12232
+
+
+
+
+
+
 
 
 
