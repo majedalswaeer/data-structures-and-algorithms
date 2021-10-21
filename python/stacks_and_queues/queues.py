@@ -49,8 +49,8 @@ class Queues:
 
     def is_empty_queue(self):
         """
-        Description: This function checks if the stack is empty
-        return: True, if the stack is empty
-                False, if the stack is not empty
+        Description: This function queue if the stack is empty
+        return: True, if the queue is empty
+                False, if the queue is not empty
         """
         return self.front==None
