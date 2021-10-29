@@ -185,6 +185,21 @@ class LinkedList:
             n = n.next
 
 def zip_lists(list1, list2):
+    """
+    Description: This function takes two linked lists and zip them togather
+
+    Args:
+        list1 : Linked List
+        list2 : Linked List
+
+    Raises:
+        Exception: Raised if the first list is empty.
+        Exception: Raised if the second list is empty.
+        Exception: Raised two lists are empty.
+
+    Returns:
+        a new ziped linked list
+    """
     if not (list1.head):
         raise Exception('First linked list is empty')
     if not (list2.head):
