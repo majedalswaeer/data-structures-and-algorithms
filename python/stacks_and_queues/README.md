@@ -1,6 +1,9 @@
+
 # Stacks and Queues
+- [Stacks and Queues Folder](https://github.com/majedalswaeer/data-structures-and-algorithms/tree/stack-and-queue/python/stacks_and_queues)
 - `Stack` is a container of objects that are inserted and removed according to the last-in first-out (LIFO) principle.
 - `Queue` is a container of objects (a linear collection) that are inserted and removed according to the first-in first-out (FIFO) principle.
+
 
 ## Challenge
 - Bild data structures with stacks and queues and implement methods on them like `push`, `pop`, `peek` and `is_empty` on `Stacks`, also, `enqueue`, `dequeue`, `peek`, and `is_empty`on `Queues`
