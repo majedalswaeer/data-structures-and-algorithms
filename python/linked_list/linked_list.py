@@ -208,6 +208,7 @@ def zip_lists(list1, list2):
         raise Exception('Both linked lists are empty')
 
     new_list = LinkedList()
+    
     list1.cur = list1.head
     list2.cur = list2.head
     new_list.insert(list1.cur.value)
