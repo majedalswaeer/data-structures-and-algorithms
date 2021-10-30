@@ -25,8 +25,10 @@ To run your tests
 # Table of Contents
 | Name                      | link                     |Date(dd/mm/yyyy)|
 | ---------------           | -------------------      |----------- |
-|Code Challenge01           | [go here](https://github.com/majedalswaeer/data-structures-and-algorithms/blob/array-reverse/python/code_challenges/array_reverse_lab01/README.md)|10-10-2021  |
-|Code Challenge02           | [go here](https://github.com/majedalswaeer/data-structures-and-algorithms/blob/array-insert-shift/python/code_challenges/array_insert_shift_lab02/README.md)|11-10-2021  |
-|Code Challenge03           | [go here](https://github.com/majedalswaeer/data-structures-and-algorithms/blob/array-binary-search/python/code_challenges/array_binary_search_lab03/README.md)|12-10-2021  |
-|Code Challenges 05, 06 and 07          | [go here](https://github.com/majedalswaeer/data-structures-and-algorithms/blob/linked-list/python/
+|Code Challenge01           | [go here](https://github.com/majedalswaeer/data-structures-and-algorithms/blob/array-reverse/python/code_challenges/array_reverse_lab01/README.md)
+|Code Challenge02           | [go here](https://github.com/majedalswaeer/data-structures-and-algorithms/blob/array-insert-shift/python/code_challenges/array_insert_shift_lab02/README.md)
+|Code Challenge03           | [go here](https://github.com/majedalswaeer/data-structures-and-algorithms/blob/array-binary-search/python/code_challenges/array_binary_search_lab03/README.md)
+|Code Challenges 05, 06, 07 and 08          | [go here](https://github.com/majedalswaeer/data-structures-and-algorithms/blob/linked-list/python/)
+|Code Challenge 10         | [go here](https://github.com/majedalswaeer/data-structures-and-algorithms/blob/stack-and-queue/python/stacks_and_queues/README.md)
+|Code Challenge 11         | [go here](https://github.com/majedalswaeer/data-structures-and-algorithms/blob/stack-queue-pseudo/python/stacks_and_queues/README.md)
 
