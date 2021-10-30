@@ -1,5 +1,6 @@
 
-# Stacks and Queues
+# `Stacks and Queues`
+
 - [Stacks and Queues Folder](https://github.com/majedalswaeer/data-structures-and-algorithms/tree/stack-and-queue/python/stacks_and_queues)
 - `Stack` is a container of objects that are inserted and removed according to the last-in first-out (LIFO) principle.
 - `Queue` is a container of objects (a linear collection) that are inserted and removed according to the first-in first-out (FIFO) principle.
@@ -60,5 +61,36 @@
     return: True, if the queue is empty
             False, if the queue is not empty
     ```
+# `stack-queue-pseudo`
+
+
+
+## Challenge Summary
+Define a PseudoQueue class that will implement our standard queue interface (the two methods listed below)
+
+## Whiteboard Process
+- `stack-queue-pseudo`
+![stack-queue-pseudo](stack-queue-pseudo.PNG)
+
+## Approach & Efficiency
+- Buliding pseudo quesues class and implement the methods mention below on them
+- The big O notiation for space and time for both queues and stacks is O(1) and O(n) respectively
+
+## API
+- `enqueue`:
+        ```
+        This function push the value given into the giver stack
+
+        Args:
+            value: integer or string
+
+- `dequeue`:
+
+
+        Description:
+        This function push the value removed from the giver stack and give it to the taker stack and adjusting the pointers for front and rare after dequeuing
+
+
+
 
 
