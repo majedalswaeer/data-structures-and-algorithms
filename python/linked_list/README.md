@@ -7,7 +7,9 @@ Implementing methods on data structures and creating the nodes
 ## White board process
 - `linked-list-kth`
 
-![linked_list_kth](linked_list_kth.png)
+    ![linked_list_kth](linked_list_kth.png)
+- `Zip Linked lists`
+    ![linked_list_zip_lists](zip_list.PNG)
 
 ## Approach & Efficiency
 This challenge enhanced my logic understanding of the linked list
@@ -85,6 +87,23 @@ kthFromEnd is a function that return the node’s value that is k places from th
 Arguments:
 Input: value
 Returns: the the node’s value that is k places from the tail
+```
+- `ziplists`
+```
+ziplists function takes two linked lists and zip them togather
+
+
+Args:
+    list1 : Linked List
+    list2 : Linked List
+
+Raises:
+    Exception: Raised if the first list is empty.
+    Exception: Raised if the second list is empty.
+    Exception: Raised two lists are empty.
+
+Returns:
+    a new ziped linked list
 ```
 
 
