@@ -1,4 +1,5 @@
 from stacks_and_queues.node import Node
+# from node import Node
 class Queues:
     """
     Description: This class define the queue
