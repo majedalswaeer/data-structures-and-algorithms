@@ -63,8 +63,6 @@
     ```
 # `stack-queue-pseudo`
 
-
-
 ## Challenge Summary
 Define a PseudoQueue class that will implement our standard queue interface (the two methods listed below)
 
