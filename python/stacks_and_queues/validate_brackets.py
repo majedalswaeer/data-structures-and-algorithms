@@ -1,4 +1,7 @@
 def validate_brackets(characters):
+    """
+    This function validate if the brackets balanced or not
+    """
     modified_stack = []
     stack=[]
     open=['(','{','[']
