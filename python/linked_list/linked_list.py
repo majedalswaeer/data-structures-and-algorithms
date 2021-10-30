@@ -154,6 +154,37 @@ class LinkedList:
             n = n.next
 
 
+    def kthFromEnd(self,k):
+        """
+        kthFromEnd is a function that return the node’s value that is k places from the tail of the linked list
+
+
+        Arguments:
+        Input: value
+        Returns: the the node’s value that is k places from the tail
+        """
+        n=self.cur
+        n = self.head
+        l = 0
+        while n.next:
+            l += 1
+            n = n.next
+        n = self.head
+
+        if k<0:
+            return "It has to be zero and above"
+
+        if k>l:
+            return "This index is empty of nodes or the length is smaller than the integer you enterd"
+
+        diff = l-k
+        for i in range(l+1):
+            print(1)
+            if i == diff:
+                return n.value
+            n = n.next
+
+
 
 
 
