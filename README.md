@@ -21,3 +21,11 @@ To run your tests
 ### 401 Data Structures, Code Challenges
 
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+
+# Table of Contents
+| Name                      | link                     |Date(dd/mm/yyyy)|
+| ---------------           | -------------------      |----------- |
+|Code Challenge01           | [go here](https://github.com/majedalswaeer/data-structures-and-algorithms/blob/array-reverse/python/code_challenges/array_reverse_lab01/README.md)|10-10-2021  |
+|Code Challenge02           | [go here](class02_401.md)|11-10-2021  |
+|Code Challenge03           | [go here](class03_401.md)|12-10-2021  |
+
