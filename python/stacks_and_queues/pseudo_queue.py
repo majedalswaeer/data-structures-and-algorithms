@@ -65,6 +65,8 @@ if __name__ == '__main__':
     my_class.enqueue('b')
     my_class.enqueue('c')
     my_class.enqueue('d')
+
+    
     print(my_class.dequeue())
     print(my_class.q_front)
     print(my_class.q_rare)

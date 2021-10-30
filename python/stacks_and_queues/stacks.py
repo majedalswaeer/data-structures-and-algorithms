@@ -1,4 +1,5 @@
 from stacks_and_queues.node import Node
+# from node import Node
 class Stacks:
     """
     Description: This class define the stack
