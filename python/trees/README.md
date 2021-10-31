@@ -1,11 +1,61 @@
 # Trees
-<!-- Short summary or background information -->
+- a binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child
 
 ## Challenge
-<!-- Description of the challenge -->
+Creating node,queue and binary search classes to implement methods such as add and contain
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+- `preorder` , `in order` and `postorder` has big O of O(1), also contain and add has big O of O(n) for time and O(1) for space
 
 ## API
-<!-- Description of each method publicly available in each of your trees -->
+- `bfs`
+    ```
+    A binary tree method which returns a list of items that it contains
+
+    input: None
+
+    output: tree items
+     ```
+
+- `pre_order`
+
+    ```
+    A binary tree method which returns a list of items that it contains
+
+    input: None
+
+    output: tree items
+
+    sub method : walk () to make the recursion staff
+
+    ```
+- `in_order`
+    ```
+    function to in order the list using Trees
+
+    ```
+- `post_order`
+
+    ```
+    A binary tree method which returns a list of items in post order
+
+    input: None
+
+    output: tree items
+
+    ```
+- `add`
+    ```
+    This function adds a node to the binary tree
+
+        Args:
+            value : Str or int
+    ```
+- `contains`
+    ```
+    This function checks if a value existed in the binary tree or not
+
+        Args:
+            value : Str or int
+        return: True or False
+    ```
