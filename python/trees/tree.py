@@ -114,6 +114,12 @@ class BinarySearchTree(BinaryTree):
         super().__init__()
 
     def add(self,value):
+        """
+        This function adds a node to the binary tree
+
+        Args:
+            value : Str or int
+        """
 
         if not self.root:
             self.root=Node(value)
@@ -132,6 +138,13 @@ class BinarySearchTree(BinaryTree):
                 cur=cur.right
 
     def contains(self,value):
+        """
+        This function checks if a value existed in the binary tree or not
+
+        Args:
+            value : Str or int
+        return: True or False
+        """
 
         if not self.root:
             raise Exception("Binary tree has no babas nor children")
