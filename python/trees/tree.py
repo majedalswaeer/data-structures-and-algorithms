@@ -109,6 +109,8 @@ class BinaryTree:
     walk(self.root)
     return list_of_items
 
+
+
 class BinarySearchTree(BinaryTree):
     def __init__(self):
         super().__init__()
@@ -168,19 +170,20 @@ class BinarySearchTree(BinaryTree):
                     else: return False
 
 
-
+    
 
 
 
 
 if __name__ == "__main__":
   tree = BinarySearchTree()
-  tree.add('a')
-  tree.add('b')
-  tree.add('c')
-  tree.add('d')
-  tree.add('e')
-  tree.add('f')
+  # tree.add(1)
+  # tree.add(2)
+  # tree.add(3)
+  # tree.add(4)
+  # tree.add(5)
+  # tree.add(5)
+  # ss=BinaryTree()
 #   a_node.left = b_node
 #   a_node.right = c_node
 
@@ -196,6 +199,6 @@ if __name__ == "__main__":
 #   tree.add('3')
 #   tree.add('4')
 
-  print(tree.contains('q'))
+  print(tree.find_maximum_value())
 
 
