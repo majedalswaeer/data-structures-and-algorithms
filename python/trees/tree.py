@@ -110,4 +110,79 @@ class BinaryTree:
     return list_of_items
 
 class BinarySearchTree(BinaryTree):
-    pass
+    def __init__(self):
+        super().__init__()
+
+    def add(self,value):
+
+        if not self.root:
+            self.root=Node(value)
+
+        else:
+            cur=self.root
+            while cur:
+                if not cur.left:
+                    cur.left=Node(value)
+                    break
+                cur=cur.left
+
+                if not cur.right:
+                    cur.right=Node(value)
+                    break
+                cur=cur.right
+
+    def contains(self,value):
+
+        if not self.root:
+            raise Exception("Binary tree has no babas nor children")
+        else:
+            cur=self.root
+            while cur:
+                if value == cur.data:
+                    return True
+                else:
+                    if cur.left:
+                        if value==cur.left.data:
+                            return True
+                        else:
+                            cur=cur.left
+                    elif cur.right:
+
+                        if value==cur.right.data:
+                            return True
+                        else:
+                            cur=cur.right
+                    else: return False
+
+
+
+
+
+
+
+if __name__ == "__main__":
+  tree = BinarySearchTree()
+  tree.add('a')
+  tree.add('b')
+  tree.add('c')
+  tree.add('d')
+  tree.add('e')
+  tree.add('f')
+#   a_node.left = b_node
+#   a_node.right = c_node
+
+#   c_node.left=f_node
+
+#   b_node.left = d_node
+#   b_node.right = e_node
+
+#   Add Root node to tree
+#   tree.root=a_node
+#   tree.add('1')
+#   tree.add('2')
+#   tree.add('3')
+#   tree.add('4')
+
+  print(tree.contains('q'))
+
+
