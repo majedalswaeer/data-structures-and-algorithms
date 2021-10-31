@@ -1,6 +1,8 @@
 # Trees
 - a binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child
 
+- Check [Trees](https://github.com/majedalswaeer/data-structures-and-algorithms/tree/trees/python/trees) out
+
 ## Challenge
 Creating node,queue and binary search classes to implement methods such as add and contain
 
