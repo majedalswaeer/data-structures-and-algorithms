@@ -7,7 +7,7 @@
 Creating node,queue and binary search classes to implement methods such as add and contain
 
 ## Approach & Efficiency
-- `preorder` , `in order` and `postorder` has big O of O(1), also contain and add has big O of O(n) for time and O(1) for space
+- `preorder` , `in order`, `postorder` and `getmax` has big O of `O(1)`, also contain and add has big O of `O(n)` for time and `O(1)` for space
 
 ## API
 - `bfs`
@@ -61,4 +61,10 @@ Creating node,queue and binary search classes to implement methods such as add a
             value : Str or int
         return: True or False
     ```
+- `get max`
+    ```
+    This function gets the maximum value in the tree
 
+    Raises:
+        Exception: if the tree is empty
+    ```
