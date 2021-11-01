@@ -10,7 +10,7 @@ Creating node,queue and binary search classes to implement methods such as add a
 - `preorder` , `in order`, `postorder` and `getmax` has big O of `O(1)`, also contain and add has big O of `O(n)` for time and `O(1)` for space
 
 ## API
-- `bfs`
+- `tree-breadth-first`
     ```
     A binary tree method which returns a list of items that it contains
 
