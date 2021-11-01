@@ -169,36 +169,46 @@ class BinarySearchTree(BinaryTree):
                             cur=cur.right
                     else: return False
 
+    def get_max(self):
+        if not self.root:
+            raise Exception("You Binary tree is empty")
+        def walk(root):
+            if not root:
+                return -1
+            if walk(root.left) > root.data:
+                root.data = walk(root.left)
+            if walk(root.right) > root.data:
+                root.data = walk(root.right)
+            return root.data
+        return walk(self.root)
 
-    
 
 
 
 
 if __name__ == "__main__":
   tree = BinarySearchTree()
-  # tree.add(1)
-  # tree.add(2)
-  # tree.add(3)
-  # tree.add(4)
-  # tree.add(5)
-  # tree.add(5)
-  # ss=BinaryTree()
-#   a_node.left = b_node
-#   a_node.right = c_node
+  a_node=Node(1)
+  b_node=Node(2)
+  c_node=Node(3)
+  d_node=Node(4)
+  e_node=Node(5)
+  f_node=Node(6)
+  a_node.left = b_node
+  a_node.right = c_node
 
-#   c_node.left=f_node
+  c_node.left=f_node
 
-#   b_node.left = d_node
-#   b_node.right = e_node
+  b_node.left = d_node
+  b_node.right = e_node
 
 #   Add Root node to tree
-#   tree.root=a_node
-#   tree.add('1')
-#   tree.add('2')
-#   tree.add('3')
-#   tree.add('4')
+  tree.root=a_node
+  tree.add(11)
+  tree.add(22)
+  tree.add(77)
+  tree.add(11)
 
-  print(tree.find_maximum_value())
+  print(tree.get_max())
 
 
