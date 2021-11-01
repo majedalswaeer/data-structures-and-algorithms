@@ -170,6 +170,13 @@ class BinarySearchTree(BinaryTree):
                     else: return False
 
     def get_max(self):
+        """
+        This function gets the maximum value in the tree
+
+        Raises:
+            Exception: if the tree is empty
+
+        """
         if not self.root:
             raise Exception("You Binary tree is empty")
         def walk(root):
