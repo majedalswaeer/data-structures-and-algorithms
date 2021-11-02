@@ -190,7 +190,8 @@ class BinarySearchTree(BinaryTree):
         return walk(self.root)
 
 
-
+def tree_fizz_buzz():
+    pass
 
 
 if __name__ == "__main__":
