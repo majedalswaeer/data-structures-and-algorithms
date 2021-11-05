@@ -86,6 +86,7 @@ class BinaryTree:
         if node.right:
           walk(node.right)
 
+
     walk(self.root)
     return list_of_items
 
@@ -122,22 +123,23 @@ class BinarySearchTree(BinaryTree):
         Args:
             value : Str or int
         """
-
         if not self.root:
             self.root=Node(value)
 
         else:
             cur=self.root
             while cur:
-                if not cur.left:
-                    cur.left=Node(value)
-                    break
-                cur=cur.left
+                if value < cur.data:
+                    if not cur.left:
+                        cur.left=Node(value)
+                        break
+                    cur=cur.left
+                else:
+                    if not cur.right:
+                        cur.right=Node(value)
+                        break
+                    cur=cur.right
 
-                if not cur.right:
-                    cur.right=Node(value)
-                    break
-                cur=cur.right
 
     def contains(self,value):
         """
@@ -147,27 +149,11 @@ class BinarySearchTree(BinaryTree):
             value : Str or int
         return: True or False
         """
+        for node in self.pre_order():
+            if node == value:
+                return True
+        return False
 
-        if not self.root:
-            raise Exception("Binary tree has no babas nor children")
-        else:
-            cur=self.root
-            while cur:
-                if value == cur.data:
-                    return True
-                else:
-                    if cur.left:
-                        if value==cur.left.data:
-                            return True
-                        else:
-                            cur=cur.left
-                    elif cur.right:
-
-                        if value==cur.right.data:
-                            return True
-                        else:
-                            cur=cur.right
-                    else: return False
 
     def get_max(self):
         """
@@ -195,12 +181,19 @@ class BinarySearchTree(BinaryTree):
 
 if __name__ == "__main__":
   tree = BinarySearchTree()
+  # tree.add('a')
+  # tree.add('b')
+  # tree.add('c')
+  # tree.add('d')
+  # tree.add('e')
+  tree.add('f')
   a_node=Node(1)
   b_node=Node(2)
-  c_node=Node(3)
-  d_node=Node(4)
+  c_node=Node(2)
+  d_node=Node(3)
   e_node=Node(5)
   f_node=Node(6)
+
   a_node.left = b_node
   a_node.right = c_node
 
@@ -211,10 +204,10 @@ if __name__ == "__main__":
 
 #   Add Root node to tree
   tree.root=a_node
-  tree.add(11)
-  tree.add(22)
-  tree.add(77)
-  tree.add(11)
+  # tree.add('1')
+#   tree.add('2')
+#   tree.add('3')
+#   tree.add('4')
 
   print(tree.get_max())
 
