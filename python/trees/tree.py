@@ -122,22 +122,22 @@ class BinarySearchTree(BinaryTree):
         Args:
             value : Str or int
         """
-
         if not self.root:
             self.root=Node(value)
 
         else:
             cur=self.root
             while cur:
-                if not cur.left:
-                    cur.left=Node(value)
-                    break
-                cur=cur.left
-
-                if not cur.right:
-                    cur.right=Node(value)
-                    break
-                cur=cur.right
+                if value < cur.data:
+                    if not cur.left:
+                        cur.left=Node(value)
+                        break
+                    cur=cur.left
+                else:
+                    if not cur.right:
+                        cur.right=Node(value)
+                        break
+                    cur=cur.right
 
     def contains(self,value):
         """
@@ -189,9 +189,37 @@ class BinarySearchTree(BinaryTree):
             return root.data
         return walk(self.root)
 
+    def comp(f_tree,s_tree):
 
-def tree_fizz_buzz():
-    pass
+        f_counter = 0
+        s_counter = 0
+        br=Queue()
+        def sub_f(root):
+            counter=0
+            br.enqueue(root)
+            while br.peek():
+                front = br.dequeue()
+                if not root.left and not root.right:
+                    counter+=1
+                    if front.left:
+                        br.enqueue(front.left)
+
+                    if front.right:
+                        br.enqueue(front.right)
+            return counter
+        f_counter=sub_f(f_tree)
+        s_counter=sub_f(s_tree)
+        if f_counter==s_counter:
+            return True
+        else: return False
+
+
+
+
+
+
+
+
 
 
 if __name__ == "__main__":
@@ -212,11 +240,8 @@ if __name__ == "__main__":
 
 #   Add Root node to tree
   tree.root=a_node
-  tree.add(11)
-  tree.add(22)
-  tree.add(77)
-  tree.add(11)
 
-  print(tree.get_max())
+
+  print(count(a_node))
 
 
