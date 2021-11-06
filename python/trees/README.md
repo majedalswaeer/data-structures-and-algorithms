@@ -11,6 +11,7 @@ Creating node,queue and binary search classes to implement methods such as add a
 
 ## API
 - `tree-breadth-first`
+    ![Breadth First](bfs.PNG)
     ```
     A binary tree method which returns a list of items that it contains
 
