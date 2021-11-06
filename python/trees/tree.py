@@ -175,46 +175,76 @@ class BinarySearchTree(BinaryTree):
         return walk(self.root)
 
 
+def fizzBuzzTree(tree):
+    """
+    This function replace the value of each node in the given tree with fizz if its divisable on 3 or buzz if its diviasable on 5 and fizzbuzz if its divisable by both
 
+    Args:
+        tree : Binary tree
 
+    Returns:
+        [type]: [description]
+    """
 
+    new_modified_tree = BinaryTree()
+    def fizzBuzz(value):
+        if not value % 15 :
+            return "fizzBuzz"
+        if not value % 3:
+            return "fizz"
+        if not value % 5 :
+            return "buzz"
+        else :
+            return value
 
+    if not tree.root:
+        return new_modified_tree
 
+    def walk(node):
+        new_node = Node(fizzBuzz(node.data))
+        if node.left:
+            new_node.left = walk(node.left)
+        if node.right:
+            new_node.right = walk(node.right)
+        return new_node
 
+    new_modified_tree.root = walk(tree.root)
+
+    return new_modified_tree
 
 
 
 if __name__ == "__main__":
-  tree = BinarySearchTree()
+  tree = BinaryTree()
   # tree.add('a')
   # tree.add('b')
   # tree.add('c')
   # tree.add('d')
   # tree.add('e')
-  tree.add('f')
+#   tree.add('f')
   a_node=Node(1)
   b_node=Node(2)
   c_node=Node(2)
   d_node=Node(3)
   e_node=Node(5)
   f_node=Node(6)
+  node_15=Node(15)
 
   a_node.left = b_node
   a_node.right = c_node
 
   c_node.left=f_node
+  c_node.right=node_15
 
   b_node.left = d_node
   b_node.right = e_node
 
-#   Add Root node to tree
+#Add Root node to tree
   tree.root=a_node
-  # tree.add('1')
-#   tree.add('2')
-#   tree.add('3')
-#   tree.add('4')
 
+  print(fizzBuzzTree(tree).root.left.left.data)
+  print(fizzBuzzTree(tree).root.right.right.data)
+  print(fizzBuzzTree(tree).root.left.right.data)
 
-  print(count(a_node))
 
 
