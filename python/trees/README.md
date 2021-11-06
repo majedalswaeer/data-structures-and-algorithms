@@ -4,7 +4,7 @@
 - Check [Binary Trees](https://github.com/majedalswaeer/data-structures-and-algorithms/tree/trees/python/trees) out
 
 ## Challenge
-Creating node,queue and binary search classes to implement methods such as add and contain
+Creating node,queue and binary search classes to implement methods such as add, contain, get max and tree fizz buzz
 
 ## Approach & Efficiency
 - `preorder` , `in order`, `postorder` and `getmax` has big O of `O(1)`, also contain and add has big O of `O(n)` for time and `O(1)` for space
@@ -62,9 +62,22 @@ Creating node,queue and binary search classes to implement methods such as add a
         return: True or False
     ```
 - `get max`
+    ![Get Max](getmax.PNG)
     ```
     This function gets the maximum value in the tree
 
     Raises:
         Exception: if the tree is empty
+    ```
+- `tree_fizz_buzz`
+    ![Fizz Buzz](fizzbuzz.PNG)
+    ```
+    This function replace the value of each node in the given tree with fizz if its divisable on 3 or buzz if its diviasable on 5 and fizzbuzz if its divisable by both
+
+    Args:
+        tree : Binary tree
+
+    Returns:
+        Modiefied tree
+
     ```
