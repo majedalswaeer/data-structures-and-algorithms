@@ -62,6 +62,7 @@ Creating node,queue and binary search classes to implement methods such as add a
         return: True or False
     ```
 - `get max`
+    ![Get Max](bfs.PNG)
     ```
     This function gets the maximum value in the tree
 
