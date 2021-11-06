@@ -183,7 +183,7 @@ def fizzBuzzTree(tree):
         tree : Binary tree
 
     Returns:
-        [type]: [description]
+        Modiefied tree
     """
 
     new_modified_tree = BinaryTree()
