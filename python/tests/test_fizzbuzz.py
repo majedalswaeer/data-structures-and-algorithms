@@ -1,34 +1,33 @@
 import pytest
-from trees.tree import BinaryTree, Node,BinarySearchTree,fizzBuzzTree
+from trees.tree import BinaryTree,fizzBuzzTree, K_Node, bffirst_k_tree
 
-def test_one(fix):
+def test_one(fixxx):
+    #Arrange
+    expected = [2, 'fizz', 'fizzBuzz', 'buzz', 1, 'fizz', 22]
+    new_tree = fizzBuzzTree(fixxx)
 
-    expected=[1, 2, 4, 'buzz', 'fizz', 'fizz', 'fizzBuzz']
-    actual=fizzBuzzTree(fix).pre_order()
+    #Act
+    actual = bffirst_k_tree(new_tree)
 
-    assert actual==expected
-
-
+    #Assert
+    assert actual == expected
 
 
 @pytest.fixture
-def fix():
-  tree = BinarySearchTree()
-  a_node=Node(1)
-  b_node=Node(2)
-  c_node=Node(3)
-  d_node=Node(4)
-  e_node=Node(5)
-  f_node=Node(6)
-  node_15=Node(15)
-
-  a_node.left = b_node
-  a_node.right = c_node
-
-  c_node.left=f_node
-  c_node.right=node_15
-
-  b_node.left = d_node
-  b_node.right = e_node
-  tree.root=a_node
+def fixxx():
+  tree = BinaryTree
+  a_node = K_Node(2)
+  b_node = K_Node(3)
+  c_node = K_Node(15)
+  d_node = K_Node(85)
+  e_node = K_Node(1)
+  f_node = K_Node(33)
+  g_node = K_Node(22)
+  a_node.children.append( b_node)
+  a_node.children.append( c_node)
+  a_node.children.append( d_node)
+  b_node.children.append( e_node)
+  b_node.children.append( f_node)
+  c_node.children.append( g_node)
+  tree.root = a_node
   return tree
