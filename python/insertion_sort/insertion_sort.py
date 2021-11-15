@@ -1,15 +1,24 @@
-def insertionSort(arr):
+def insertionSort(list):
+    """
+    This function takes a list as an input and return the same array with sorted values
+
+    Args:
+        list
+
+    Return:
+        Sorted list
+    """
     i=1
-    for i in range(len(arr)):
+    for i in range(len(list)):
         j=i-1 #0
-        temp=arr[i] #5
-        while j>=0 and temp<arr[j]:
-            arr[j+1]=arr[j]
+        temp=list[i] #5
+        while j>=0 and temp<list[j]:
+            list[j+1]=list[j]
             j=j-1
-        arr[j+1]=temp
-    return arr
+        list[j+1]=temp
+    return list
 
 
 if __name__ == '__main__':
-    x=[2,5,1,4,8,3,1,5,7,9]
+    x=[2,4,1,5,7]
     print(insertionSort(x))
