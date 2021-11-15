@@ -1,6 +1,6 @@
 # Merge sort
 - Merge sort is a function that insert the lower values at the beginning
-
+- Check [the folder out](https://github.com/majedalswaeer/data-structures-and-algorithms/tree/mergeSort/python/merg_sort)
 ## Challenge
 Create a function that takes an unsorted list and return the same list sorted
 
