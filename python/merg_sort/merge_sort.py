@@ -1,4 +1,13 @@
 def merge_sort(my_list):
+    """
+    This function takes a list as an input and return the same array with sorted values
+
+    Args:
+        list
+
+    Return:
+        Sorted list
+    """
     n=len(my_list)
     if n > 1:
 
@@ -18,11 +27,6 @@ def merge_sort(my_list):
             if left[i] < right[j]:
                 my_list[k] = left[i]
                 i += 1
-                print('r',right)
-                print('l',left)
-                print('mid',mid)
-                print(i,j,k)
-                print(my_list)
             else:
                 my_list[k] = right[j]
                 j += 1
@@ -30,21 +34,11 @@ def merge_sort(my_list):
             #
 
         while i < len(left):
-            print('r',right)
-            print('l',left)
-            print('mid',mid)
-            print(i,j,k)
-            print(my_list)
             my_list[k] = left[i]
             i += 1
             k += 1
             # print(my_list)
         while j < len(right):
-            print('r',right)
-            print('l',left)
-            print('mid',mid)
-            print(i,j,k)
-            print(my_list)
             my_list[k] = right[j]
             j += 1
             k += 1
