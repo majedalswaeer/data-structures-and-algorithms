@@ -1,4 +1,15 @@
 def quick_sort(my_list,left,right):
+    """
+    This function takes a list as an input and return the same array with sorted values
+
+    Args:
+        list
+        left
+        right
+
+    Return:
+        Sorted list
+    """
     if left<right:
         position=partition(list,left,right)
         quick_sort(my_list,left,position-1)
