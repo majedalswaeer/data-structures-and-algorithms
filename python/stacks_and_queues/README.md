@@ -63,8 +63,6 @@
     ```
 # `stack-queue-pseudo`
 
-
-
 ## Challenge Summary
 Define a PseudoQueue class that will implement our standard queue interface (the two methods listed below)
 
@@ -101,5 +99,19 @@ Define a PseudoQueue class that will implement our standard queue interface (the
 I used the original enqueing and dequeue from the queues, then i created instances for both cats and dogs
 The methods has O(1) big O complexity for time and space
 
-## Solution
-The shalter is only for cats and dogs, you can enqueue any dog or cat, else, it will not enqueue it
+# `stack-queue-validateBrackets`
+# Challenge Summary
+- Creating a function to validate if the brackets are balance or not
+
+## Whiteboard Process
+![validate_brackets](validate_brackets.PNG)
+
+## Approach & Efficiency
+I removed the normal letters from my given string then i checked ig the brackets are balanced or not
+
+## API
+- `validate_brackets`:
+    ```
+    This function validate if the brackets balanced or not
+    ```
+
