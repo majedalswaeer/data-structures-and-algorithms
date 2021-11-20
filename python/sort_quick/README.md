@@ -7,7 +7,7 @@
 Create a function that takes an unsorted list and return the same list sorted using quick sort algorithm
 
 ## Approach & Efficiency
-- `Merge_sort` has big O of `O(n^2)` for time and `O(n)` for space
+- `Merge_sort` has big O of `O(n^2)` for time and `O(1)` for space
 
 ## API
 - `Quicksort`
@@ -24,4 +24,10 @@ Create a function that takes an unsorted list and return the same list sorted us
         Sorted list
     """
 
+## White Board
+
+![Quick Sort](quickSort_Wb.png)
+
+## Blog
+![Quick Sort](quicksort_blog.png)
 
