@@ -22,4 +22,8 @@ Create a function that takes an unsorted list and return the same list sorted
 
 # White Board
 - Check the WhiteBoard out
-     ![the white board out](inserationsort.PNG)
+     ![white board](InesrtionSort_Wb.png)
+
+# Blog
+- Check the Blog out
+     ![Blog](InsertionSort_blog.png)
