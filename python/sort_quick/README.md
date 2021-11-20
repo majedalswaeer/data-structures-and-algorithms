@@ -1,7 +1,7 @@
 
 # [Quick sort](https://github.com/majedalswaeer/data-structures-and-algorithms/tree/quickSort/python/sort_quick)
 - QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot
-- Check [the folder](https://github.com/majedalswaeer/data-structures-and-algorithms/tree/mergeSort/python/merg_sort) out
+- Check [the folder](https://github.com/majedalswaeer/data-structures-and-algorithms/tree/quickSort/python/sort_quick) out
 - Check [the pull request](https://github.com/majedalswaeer/data-structures-and-algorithms/pull/19) out
 ## Challenge
 Create a function that takes an unsorted list and return the same list sorted using quick sort algorithm
