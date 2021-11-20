@@ -20,6 +20,11 @@ Create a function that takes an unsorted list and return the same list sorted
         Sorted list
     """
 
+# White Board
+- Check the White Board out
+     ![the White Board out](mergesort.png)
+
+
 # Blog
 - Check the blog out
-     ![the blog out](mergesort.PNG)
+     ![the blog out](mergeSort_blog.png)
