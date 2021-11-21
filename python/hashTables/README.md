@@ -62,7 +62,7 @@
                 [type]: Boolean
 
     ```
-    - `hashmap_repeated_word`
+- `hashmap_repeated_word`
     ```
     This function takes a string and return a string with the most first occurance
 
