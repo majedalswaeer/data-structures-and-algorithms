@@ -6,6 +6,10 @@
 ## Challenge
 - Implementing a hash table that is able to add key/value pairs to it
 
+## White Board process
+- `hashmap_repeated_word`
+![hashmap_repeated_word](hashmap_repeated_word.png)
+
 ## Approach & Efficiency
 - All methods existed in the hash table is not exceeding big O(n), that the benefit of the hash table that we can retrieve, add and check our data in a very low time and space complexity.
 
@@ -54,5 +58,15 @@
 
             Returns:
                 [type]: Boolean
+
+    ```
+    - `hashmap_repeated_word`
+    ```
+    This function takes a string and return a string with the most first occurance
+
+    Args:
+        my_str ([type]): String
+    Return:
+        String
 
     ```
