@@ -1,6 +1,14 @@
 from .hash_table import HashTable
 import re
 def hashmap_repeated_word(my_str):
+    """
+    This function takes a string and return a string with the most first occurance
+
+    Args:
+        my_str ([type]): String
+    Return:
+        String
+    """
     my_new_string = re.sub('[^a-zA-Z0-9 \n.]', '', my_str).lower()
     splitted=my_new_string.split(' ')
     ins=HashTable()
