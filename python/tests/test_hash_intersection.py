@@ -2,6 +2,7 @@ from hashTables import hashtable_inetersection
 from hashTables.helper_classes import BinarySearchTree
 
 def test_1():
+   #Arrange
   tree = BinarySearchTree()
   tree.add('a')
   tree.add('b')
@@ -16,3 +17,10 @@ def test_1():
   tree2.add('d')
   tree2.add('e')
   tree2.add('f')
+  expected=['c','d','e','f']
+
+  #Act
+  actual=hashtable_inetersection.tree_intersection(tree,tree2)
+
+  #Assert
+  assert actual==expected
