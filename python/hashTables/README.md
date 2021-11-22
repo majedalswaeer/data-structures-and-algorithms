@@ -13,6 +13,9 @@
 - `hashmap_repeated_word`
 ![hashmap_repeated_word](hashmap_repeated_word.png)
 
+- `tree_intersection`
+![tree_intersection](hash_intersection.PNG)
+
 ## Approach & Efficiency
 - All methods existed in the hash table is not exceeding big O(n), that the benefit of the hash table that we can retrieve, add and check our data in a very low time and space complexity.
 
