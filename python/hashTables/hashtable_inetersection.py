@@ -1,7 +1,15 @@
 from .hash_table import HashTable
 from .helper_classes import BinarySearchTree
 
-def tt(tree1,tree2):
+def tree_intersection(tree1,tree2):
+    """
+    This function takes two binary trees and finds the inersections between them.
+
+    Arge:
+        Two binary trees
+    Return:
+        List with intersections
+    """
     l1=tree1.tree_breadth_first()
     l2=tree2.tree_breadth_first()
     hashh_table=HashTable()
@@ -29,5 +37,5 @@ if __name__ == "__main__":
   tree2.add('d')
   tree2.add('e')
   tree2.add('f')
-  print(tt(tree,tree2))
+  print(tree_intersection(tree,tree2))
 

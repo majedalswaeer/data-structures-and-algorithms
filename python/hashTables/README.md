@@ -72,3 +72,12 @@
         String
 
     ```
+- `tree-intersection`
+    ```
+    This function takes two binary trees and finds the inersections between them.
+
+    Args:
+        Two binary trees
+    Return:
+        List with intersections
+    ```
