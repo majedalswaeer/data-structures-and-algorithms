@@ -2,6 +2,7 @@
 - Check [the pull request out](https://github.com/majedalswaeer/data-structures-and-algorithms/pull/20)
 - Check [the pull request for hash repeated out](https://github.com/majedalswaeer/data-structures-and-algorithms/pull/21)
 - Check [the pull request for hash table intersections out](https://github.com/majedalswaeer/data-structures-and-algorithms/pull/22)
+- Check [the pull request for hash table left_join out](https://github.com/majedalswaeer/data-structures-and-algorithms/pull/23)
 
 ## Description
 - This challenge representing the new data structure that we took which is the hash table
