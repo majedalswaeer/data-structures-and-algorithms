@@ -16,6 +16,9 @@
 - `tree_intersection`
 ![tree_intersection](hash_intersection.PNG)
 
+- `left_join`
+![left_join](left_join.PNG)
+
 ## Approach & Efficiency
 - All methods existed in the hash table is not exceeding big O(n), that the benefit of the hash table that we can retrieve, add and check our data in a very low time and space complexity.
 
@@ -84,4 +87,16 @@
         Two binary trees
     Return:
         List with intersections
+    ```
+- `left_join`
+    ```
+    This function takes two hash tables and return a list or lists that contain keys and its corresponding values
+
+    Args:
+        hashTable_f: Hash Table
+        hashTable_s: Hash Table
+
+    Returns:
+        k_coress_value: list containing strings or integers
+
     ```
