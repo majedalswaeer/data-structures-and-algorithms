@@ -81,7 +81,7 @@ def test_get_neighbors():
 
     graph.add_edge(apple, banana, 44)
 
-    neighbors = graph.get_neighbors(apple)
+    neighbors = graph.get_neigbors(apple)
 
     assert len(neighbors) == 1
 
