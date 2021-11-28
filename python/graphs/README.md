@@ -27,7 +27,16 @@
     - size
         - Arguments: none
         - Returns the total number of nodes in the graph
+    - breadth_first
+        - This function takes a vertex to start with, and return a list containing the nodes in the graph according to the breadth first order
 
+        - Args: start_vertex ([type]): Vertex
+
+        - Returns: List of vertices
+## White Board process
+- `breadth_first`
+
+- ![Graph_breadth_first](graph_breadth_first.PNG)
 ## Approach & Efficiency
 - All method implemented does not exceeding O(n) for time and space
 
@@ -37,21 +46,29 @@
        - Returns: The added node
        - Add a node to the graph
 
-    - `add edge`
-       - Arguments: 2 nodes to be connected by the edge, weight (optional)
-        - Returns: nothing
-        - Adds a new edge between two nodes in the graph
-        - If specified, assign a weight to the edge
-        - Both nodes should already be in the Graph
+- `add edge`
+    - Arguments: 2 nodes to be connected by the edge, weight (optional)
+    - Returns: nothing
+    - Adds a new edge between two nodes in the graph
+    - If specified, assign a weight to the edge
+    - Both nodes should already be in the Graph
 
-    - `get nodes`
-        - Arguments: none
-        - Returns all of the nodes in the graph as a collection (set, list, or similar)
+- `get nodes`
+    - Arguments: none
+    - Returns all of the nodes in the graph as a collection (set, list, or similar)
 
-    - `get neighbors`
-        - Arguments: node
-        - Returns a collection of edges connected to the given node
-        - Include the weight of the connection in the returned collection
-    - `size`
-        - Arguments: none
-        - Returns the total number of nodes in the graph
+- `get neighbors`
+    - Arguments: node
+    - Returns a collection of edges connected to the given node
+    - Include the weight of the connection in the returned collection
+
+- `size`
+    - Arguments: none
+    - Returns the total number of nodes in the graph
+
+- `breadth_first`
+    - This function takes a vertex to start with, and return a list containing the nodes in the graph according to the breadth first order
+
+    - Args: start_vertex ([type]): Vertex
+
+    - Returns: List of vertices
