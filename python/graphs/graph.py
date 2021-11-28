@@ -127,21 +127,63 @@ class Graph:
           visited.add(neighbor)
           queue.enqueue(neighbor)
 
+  def breadth_first(self, start_vertex):
+    """
+
+      This function takes a vertex to start with, and return a list containing the nodes in the graph according to the breadth first order
+
+       Args:
+          start_vertex ([type]): Vertex
+
+       Returns:
+          List
+
+    """
+
+    queue = []
+    results=[]
+    visited = set()
+    queue.append(start_vertex)
+    visited.add(start_vertex)
+    while len(queue):
+      current_vertex = queue.pop(0)
+      results.append(current_vertex.value)
+
+      neighbors = self.get_neigbors(current_vertex)
+
+      for edge in neighbors:
+        neighbor =  edge.vertex
+
+        if neighbor not in visited:
+          visited.add(neighbor)
+          queue.append(neighbor)
+    return results
+
+
+
+
 
 if __name__ =='__main__':
     ins=Graph()
-    n1=ins.add_node(1)
-    n2=ins.add_node(2)
-    n3=ins.add_node(3)
-    n4=ins.add_node(4)
+    n1=ins.add_node('pandora')
+    n2=ins.add_node('Arendelle')
+    n3=ins.add_node('Metroville')
+    n4=ins.add_node('Monstroplolis')
+    n5=ins.add_node('Narnia')
+    n6=ins.add_node('Naboo')
     ins.add_edge(n1,n2,1)
     ins.add_edge(n2,n3,1)
-    ins.add_edge(n3,n1,1)
-    # ins.breadth_first_search(1)
-    x=ins.get_nodes()
-    y=list(x)
-    for i in range(len(x)):
-        print(y[i].value)
+    ins.add_edge(n2,n4,1)
+    ins.add_edge(n3,n4,1)
+    ins.add_edge(n4,n6,1)
+    ins.add_edge(n3,n5,1)
+    ins.add_edge(n3,n6,1)
+    ins.add_edge(n5,n6,1)
+    print(ins.breadth_first(n1))
+    # x=ins.get_nodes()
+    # y=list(x)
+    # for i in range(len(x)):
+    #     print(y[i].value)
 
 
 
