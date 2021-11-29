@@ -159,32 +159,53 @@ class Graph:
           queue.append(neighbor)
     return results
 
+def business_trip(my_graph,my_list):
+    names=[]
+    for i in my_list:
+        names.append(i.value)
+    print(names)
+    sum=0
+    city_names=my_graph.get_neigbors(my_list[0])
+    for c in city_names:
+        if c.vertex.value in names:
+            sum+=c.weight
+    results=[True,f'{sum}$']
+    if not sum:
+        return [False,f'{sum}$']
+    return results
+
 
 
 
 
 if __name__ =='__main__':
-    ins=Graph()
-    n1=ins.add_node('pandora')
-    n2=ins.add_node('Arendelle')
-    n3=ins.add_node('Metroville')
-    n4=ins.add_node('Monstroplolis')
-    n5=ins.add_node('Narnia')
-    n6=ins.add_node('Naboo')
-    ins.add_edge(n1,n2,1)
-    ins.add_edge(n2,n3,1)
-    ins.add_edge(n2,n4,1)
-    ins.add_edge(n3,n4,1)
-    ins.add_edge(n4,n6,1)
-    ins.add_edge(n3,n5,1)
-    ins.add_edge(n3,n6,1)
-    ins.add_edge(n5,n6,1)
-    print(ins.breadth_first(n1))
-    # x=ins.get_nodes()
-    # y=list(x)
-    # for i in range(len(x)):
-    #     print(y[i].value)
 
+    my_graph = Graph()
+    pandora = my_graph.add_node('Pandora')
+    arendelle = my_graph.add_node('Arendelle')
+    metroville = my_graph.add_node('Metroville')
+    monstropolis = my_graph.add_node('Monstropolis')
+    naboo = my_graph.add_node('Naboo')
+    narnia = my_graph.add_node('Narnia')
+    my_graph.add_edge(pandora,arendelle,150)
+    my_graph.add_edge(arendelle,pandora,150)
+    my_graph.add_edge(pandora,metroville,82)
+    my_graph.add_edge(metroville,pandora,82)
+    my_graph.add_edge(arendelle,metroville,99)
+    my_graph.add_edge(metroville,arendelle,99)
+    my_graph.add_edge(arendelle,monstropolis,42)
+    my_graph.add_edge(monstropolis,arendelle,42)
+    my_graph.add_edge(monstropolis,metroville,105)
+    my_graph.add_edge(metroville,monstropolis,105)
+    my_graph.add_edge(monstropolis,naboo,73)
+    my_graph.add_edge(naboo,monstropolis,73)
+    my_graph.add_edge(metroville,naboo,26)
+    my_graph.add_edge(naboo,metroville,26)
+    my_graph.add_edge(metroville,narnia,37)
+    my_graph.add_edge(narnia,metroville,37)
+    my_graph.add_edge(naboo,narnia,250)
+    my_graph.add_edge(narnia,naboo,250)
+    print(business_trip(my_graph,[arendelle,monstropolis,naboo]))
 
 
 
