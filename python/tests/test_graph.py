@@ -93,6 +93,8 @@ def test_get_neighbors():
 
 def test_bussines_trip():
 
+    #Arrange
+
     my_graph = Graph()
     pandora = my_graph.add_node('Pandora')
     arendelle = my_graph.add_node('Arendelle')
@@ -119,10 +121,21 @@ def test_bussines_trip():
     my_graph.add_edge(naboo,narnia,250)
     my_graph.add_edge(narnia,naboo,250)
 
-    expected=[True, '150$']
-    actual=business_trip(my_graph,[pandora,arendelle])
+    #Act
+    expected=[True, '82$']
+    actual=business_trip(my_graph,[metroville,pandora])
 
-    expected1=[True, '150$']
-    actual1=business_trip(my_graph,[pandora,arendelle])
+    expected1=[True, '115$']
+    actual1=business_trip(my_graph,[arendelle,monstropolis,naboo])
 
+    expected2=[False, '0$']
+    actual2=business_trip(my_graph,[naboo,pandora])
+
+    expected3=[False, '0$']
+    actual3=business_trip(my_graph,[narnia,arendelle,naboo])
+
+    #Assert
     assert actual==expected
+    assert actual1==expected1
+    assert actual2==expected2
+    assert actual3==expected3
