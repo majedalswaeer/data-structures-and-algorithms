@@ -139,7 +139,7 @@ class Graph:
           List
 
     """
-
+    # to be extended
     queue = []
     results=[]
     visited = set()
@@ -173,7 +173,7 @@ def business_trip(my_graph,my_list):
         for c in city_names:
           if c.vertex.value == names[x+1]:
               sum+=c.weight
-              
+
         results=[True,f'{sum}$']
       elif not sum:
             return [False,f'{sum}$']
