@@ -161,17 +161,22 @@ class Graph:
 
 def business_trip(my_graph,my_list):
     names=[]
+
     for i in my_list:
         names.append(i.value)
-    print(names)
     sum=0
-    city_names=my_graph.get_neigbors(my_list[0])
-    for c in city_names:
-        if c.vertex.value in names:
-            sum+=c.weight
-    results=[True,f'{sum}$']
-    if not sum:
-        return [False,f'{sum}$']
+
+    for x in range(len(my_list)):
+      if x+1<len(names):
+        city_names=my_graph.get_neigbors(my_list[x])
+
+        for c in city_names:
+          if c.vertex.value == names[x+1]:
+              sum+=c.weight
+              
+        results=[True,f'{sum}$']
+      elif not sum:
+            return [False,f'{sum}$']
     return results
 
 
@@ -181,12 +186,13 @@ def business_trip(my_graph,my_list):
 if __name__ =='__main__':
 
     my_graph = Graph()
-    pandora = my_graph.add_node('Pandora')
-    arendelle = my_graph.add_node('Arendelle')
-    metroville = my_graph.add_node('Metroville')
-    monstropolis = my_graph.add_node('Monstropolis')
-    naboo = my_graph.add_node('Naboo')
-    narnia = my_graph.add_node('Narnia')
+    pandora = my_graph.add_node('pandora')
+    arendelle = my_graph.add_node('arendelle')
+    metroville = my_graph.add_node('metroville')
+    monstropolis = my_graph.add_node('monstropolis')
+    naboo = my_graph.add_node('naboo')
+    narnia = my_graph.add_node('narnia')
+    text = my_graph.add_node('gg')
     my_graph.add_edge(pandora,arendelle,150)
     my_graph.add_edge(arendelle,pandora,150)
     my_graph.add_edge(pandora,metroville,82)
@@ -205,7 +211,10 @@ if __name__ =='__main__':
     my_graph.add_edge(narnia,metroville,37)
     my_graph.add_edge(naboo,narnia,250)
     my_graph.add_edge(narnia,naboo,250)
+    print(business_trip(my_graph,[metroville,pandora]))
     print(business_trip(my_graph,[arendelle,monstropolis,naboo]))
+    print(business_trip(my_graph,[naboo,pandora]))
+    print(business_trip(my_graph,[narnia,arendelle,naboo]))
 
 
 
