@@ -33,10 +33,20 @@
         - Args: start_vertex ([type]): Vertex
 
         - Returns: List of vertices
+    - depth_first
+
+        - This function takes a vertex to start with, and return a list containing the nodes in the graph according to the depth first order
+
+        -  Args: start_vertex ([type]): Vertex
+
+        -  Returns: List
 ## White Board process
 - `breadth_first`
 
 - ![Graph_breadth_first](graph_breadth_first.PNG)
+- `depth_first`
+
+- ![Graph_depth_first](graph_depth_first.PNG)
 ## Approach & Efficiency
 - All method implemented does not exceeding O(n) for time and space
 
@@ -72,3 +82,11 @@
     - Args: start_vertex ([type]): Vertex
 
     - Returns: List of vertices
+- `depth_first`
+
+    - This function takes a vertex to start with, and return a list containing the nodes in the graph according to the depth first order
+
+    -  Args: start_vertex ([type]): Vertex
+
+    -  Returns: List
+
