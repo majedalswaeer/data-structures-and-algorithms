@@ -139,3 +139,32 @@ def test_bussines_trip():
     assert actual1==expected1
     assert actual2==expected2
     assert actual3==expected3
+
+
+def test_breadth_first():
+    #Arrange
+    graph = Graph()
+    a = graph.add_node('A')
+    b = graph.add_node('B')
+    c = graph.add_node('C')
+    d = graph.add_node('D')
+    e = graph.add_node('E')
+    f = graph.add_node('F')
+    g = graph.add_node('G')
+    h = graph.add_node('H')
+    graph.add_edge(a,b)
+    graph.add_edge(a,d)
+    graph.add_edge(b,c)
+    graph.add_edge(b,d)
+    graph.add_edge(c,g)
+    graph.add_edge(d,e)
+    graph.add_edge(d,h)
+    graph.add_edge(d,f)
+    graph.add_edge(f,h)
+    expected = ['A', 'B', 'C', 'G', 'D', 'E', 'H', 'F']
+
+    #Act
+    actual = graph.depth_first(a)
+
+    #Assert
+    assert actual == expected
